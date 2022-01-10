@@ -1,20 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import {ListItem, Avatar} from 'react-native-elements';
 
 const CustomListItem = ({id, chatName, enterChat}) => {
     return (
-        <ListItem>
+        <ListItem onPress={() => enterChat(id, chatName)} key={id} bottomDivide>
             <Avatar
                 rounded
                 source={{
-                    uri: 'https://cdn-icons-png.flaticon.com/128/1946/1946429.png'
+                    uri: 'https://cencup.com/wp-content/uploads/2015/03/avatar-placeholder.png'
                 }}
              />
 
              <ListItem.Content>
                  <ListItem.Title style={{fontWeight: '800'}}>
-                     Youtube Chat
+                     {chatName}
                  </ListItem.Title>
                  <ListItem.Subtitle numberOfLines={1} ellipsizerMode='tail'>
                      This is a test subtitle

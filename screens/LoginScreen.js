@@ -43,7 +43,6 @@ export default function LoginScreen({ navigation }) {
                     secureTextEntry
                     value={password}
                     onChangeText={text => setPassword(text)}
-                    onSubmitEditing={signIn}
                 />
             </View>
 
