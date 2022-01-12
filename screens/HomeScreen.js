@@ -14,7 +14,7 @@ const HomeScreen = ({ navigation }) => {
     }
 
     useEffect(() => {
-        const unsubscribe = db.collection('chats').onSnapshot(snapshot => (
+        const unsubscribe = db.collection('signal_chats').onSnapshot(snapshot => (
             setChats(snapshot.docs.map(doc => ({
                 id: doc.id,
                 data: doc.data()
