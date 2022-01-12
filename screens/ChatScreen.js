@@ -19,7 +19,7 @@ const ChatScreen = ({ navigation, route }) => {
                     flexDirection: 'row',
                     alignItems: 'center'
                 }}>
-                    <Avatar rounded source={{ uri: messages[0]?.data.photoURL }} />
+                    <Avatar rounded source={{ uri: messages?.[messages.length-1]?.photoURL || 'https://cdn.meiker.io/assets/153029/2021/10/icon_20211009053450616129faec6fe.png'  }} />
                     <Text style={{
                         color: 'white',
                         marginLeft: 10,
@@ -187,7 +187,8 @@ const styles = StyleSheet.create({
         width: '100%',
         position: 'fixed',
         bottom: 0,
-        padding: 15
+        padding: 20,
+        paddingRight: 30
     },
     textInput: {
         bottom: 0,

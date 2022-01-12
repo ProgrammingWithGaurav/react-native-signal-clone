@@ -57,7 +57,7 @@ const RegisterScreen = ({ navigation }) => {
                 />
                 <Input
                     placeholder='Profile Picture URL (optional)'
-                    type='password'
+                    type='text'
                     secureTextEntry
                     value={imageURL}
                     onChangeText={text => setImageURL(text)}
