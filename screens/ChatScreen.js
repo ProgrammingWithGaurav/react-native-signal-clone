@@ -116,7 +116,7 @@ const ChatScreen = ({ navigation, route }) => {
                                 ))
                             }
                         </ScrollView>
-                        <View style={styles.footer}>
+                        <View style={styles.footer} position='fixed'>
                             <TextInput
                                 value={input}
                                 onSubmitEditing={sendMessage}
@@ -185,7 +185,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         width: '100%',
-        position: 'fixed',
         bottom: 0,
         padding: 20,
         paddingRight: 30
