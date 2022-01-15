@@ -150,7 +150,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginRight: 15,
         marginBottom: 20,
-        maxWidth: '20%',
+        maxWidth: '75%',
         position: 'relative'
     },
     sender: {
