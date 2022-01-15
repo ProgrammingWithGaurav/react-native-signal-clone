@@ -116,7 +116,7 @@ const ChatScreen = ({ navigation, route }) => {
                                 ))
                             }
                         </ScrollView>
-                        <View style={styles.footer} position='fixed'>
+                        <View style={styles.footer} >
                             <TextInput
                                 value={input}
                                 onSubmitEditing={sendMessage}
